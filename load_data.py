@@ -1,5 +1,4 @@
 import pandas as pd
-
 # CSV Load
 # Load data from a path variable
 def load_data():

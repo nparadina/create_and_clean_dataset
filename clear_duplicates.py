@@ -1,3 +1,4 @@
+import pandas as pd
 def clear_duplicates(prices):
     # Convert column names to lowercase and replace spaces with underscores
     prices.columns = prices.columns.str.lower().str.replace(' ', '_')
