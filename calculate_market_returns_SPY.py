@@ -10,6 +10,5 @@ def calculate_market_returns_SPY(prices):
     """
     
     spy_ret = prices[prices['symbol'] == 'spy'][['date', 'returns']].rename(columns={'returns': 'market_ret'})
-    prices.merge(spy_ret, on='date', how='left')
-    print("IN FUNCTION")
-    print(prices)
+    prices=prices.merge(spy_ret, on='date', how='left')
+    return prices
